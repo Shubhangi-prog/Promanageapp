@@ -1,0 +1,77 @@
+.NavBody {
+  height: 100vh;
+  width: 15vw;
+  background-color: #ffffff;
+  border-right: 1px solid #edf5fe;
+  font-family: var(--font-poppins);
+  position: relative;
+}
+
+.Title {
+  height: 10vh;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.SandBoxLogo {
+  height: 2rem;
+  width: 2rem;
+}
+.Title h1 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+.Menu {
+  display: flex;
+  flex-flow: column;
+}
+
+.menuItems {
+  height: 4rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  cursor: pointer;
+}
+
+.menuItems:hover {
+  background-color: red;
+}
+
+.MenuLogo {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.menuItems h2 {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+.Title,
+.menuItems,
+.LogoutContainer {
+  padding-left: 2.5rem;
+}
+
+.LogoutContainer {
+  position: absolute;
+  bottom: 5rem;
+  display: flex;
+  align-items: center;
+  color: #cf3636;
+  cursor: pointer;
+}
+.LogoutContainer h2 {
+  margin-left: 1rem;
+}
+
+.LogoutLogo {
+  height: 2rem;
+  width: 2rem;
+}

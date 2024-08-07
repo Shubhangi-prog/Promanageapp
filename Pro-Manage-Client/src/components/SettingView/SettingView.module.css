@@ -1,0 +1,91 @@
+.Contianer {
+  height: 100vh;
+  width: 85vw;
+
+  padding-left: 4rem;
+  font-family: var(--primarytext);
+}
+
+.Title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.form {
+  width: 30%;
+}
+
+.InputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.InputContainer h1 {
+  font-size: 3rem;
+  padding-bottom: 5rem;
+  font-weight: 600;
+}
+
+.Input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  height: 6rem;
+}
+
+.inputBox input {
+  width: 100%;
+  height: 4rem;
+  padding-left: 4rem;
+  font-family: var(--primarytext);
+  font-weight: 400;
+  border-radius: 1rem;
+  border: 1.3px solid #d0d0d0;
+  outline: none;
+}
+/* Icon */
+.IconContainer {
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.IconRight {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.Icon {
+  height: 2rem;
+  width: 2rem;
+  color: #828282;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

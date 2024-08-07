@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* fonts */
+  --primarytext: "Open Sans";
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+  --font-noto-sans: "Noto Sans";
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  html {
+    font-size: 7px;
+  }
+}
+/* It is for for the globle view of the dashboard menu routes */
+.dashBoardGloble {
+  width: 85vw;
+  height: 100vh;
+}

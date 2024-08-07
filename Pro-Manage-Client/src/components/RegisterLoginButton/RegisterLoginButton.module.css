@@ -1,0 +1,7 @@
+.buttonStyle {
+  font-family: var(--primarytext);
+  width: 100%;
+  height: 4rem;
+  border-radius: 50px;
+  cursor: pointer;
+}

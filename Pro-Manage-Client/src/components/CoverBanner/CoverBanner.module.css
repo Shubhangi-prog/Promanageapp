@@ -1,0 +1,94 @@
+.body {
+  height: 100vh;
+  width: 60vw;
+  background-color: #17a2b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ImgContainer {
+  position: relative;
+  height: 35rem;
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+
+  /* background-image: url(../../assets/Astro.png);
+  background-position: center; */
+}
+.AstroImg {
+  position: absolute;
+  height: 40rem;
+  width: 40rem;
+  z-index: 10;
+}
+.cirlce {
+  position: absolute;
+  height: 30rem;
+  width: 30rem;
+  background-color: #317f8b;
+  border-radius: 50%;
+}
+.welcomeMsg {
+  color: #ffffff;
+  font-family: var(--primarytext);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcomeMsg h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.welcomeMsg h3 {
+  /* font-size: 1rem; */
+  font-weight: 600;
+}
+
+/* Arrow */
+
+.Arrow {
+  display: none;
+}
+.Icon {
+  color: #ffffff;
+  height: 4rem;
+  width: 4rem;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .body {
+    width: 100vw;
+  }
+  .Arrow {
+    display: block;
+    bottom: 1rem;
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+    animation: jumpInfinite 1.5s infinite;
+  }
+}

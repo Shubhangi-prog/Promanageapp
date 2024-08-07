@@ -1,0 +1,132 @@
+/* Task karts */
+
+.taskKarts {
+  height: max-content;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.taskHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  position: relative;
+}
+
+/* edit share delete popup */
+
+.EditShareDelPopUp {
+  position: absolute;
+  padding: 2rem 0;
+  width: 15rem;
+  background-color: #ffffff;
+  right: 0;
+  top: 1.5rem;
+  box-shadow: 0px 2px 22px 0px #7e7a7a40;
+  border-radius: 15px;
+  z-index: 100;
+}
+.EditShareDelPopUpItems {
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.EditShareDelPopUpItems span {
+  margin-left: 2rem;
+}
+.EditShareDelPopUpItems:hover {
+  background: #4391ed1a;
+}
+
+.KartPriority {
+  font-size: 1rem;
+  font-family: var(--font-poppins);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.KartPriority span {
+  font-weight: 500;
+  color: #707070;
+}
+.KartTitle {
+  font-size: 1.8rem;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.checkListHeader {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.taskChecklist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.CheckListInputBox {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e2e2e2;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: var(--font-inter);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkBox {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.taskKartBottom {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-family: var(--font-poppins);
+  color: #767575;
+}
+.dueDatebtn {
+  display: flex;
+  align-items: center;
+}
+.taskTypebtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.taskbtn {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #eeecec;
+}
+.dueDatebtn span {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: default;
+  background-color: #dbdbdb;
+}
+
+@media only screen and (max-width: 1280px) {
+  .taskKarts {
+    font-size: 1px;
+  }
+  .taskKartBottom {
+    font-size: 0.6rem;
+  }
+}

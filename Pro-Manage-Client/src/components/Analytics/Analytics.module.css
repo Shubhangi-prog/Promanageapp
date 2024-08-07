@@ -1,0 +1,41 @@
+.AnalyticsBody {
+  height: 100vh;
+  width: 85vw;
+  padding: 3rem;
+  font-family: var(--primarytext);
+}
+
+.AnalyticsHeader {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.AnalyticsContainer {
+  width: 100%;
+  display: flex;
+}
+
+.ContainerContent {
+  width: 35rem;
+  height: 25rem;
+  border-radius: 15px;
+  background-color: #f9fcff;
+  padding: 0 2rem;
+}
+
+.ContainerContent ul {
+  width: 100%;
+  height: 100%;
+
+  font-weight: 400;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ContainerContent ul li {
+  display: flex;
+  justify-content: space-between;
+}

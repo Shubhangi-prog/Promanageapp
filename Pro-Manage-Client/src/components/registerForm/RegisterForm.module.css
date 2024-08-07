@@ -1,0 +1,120 @@
+.body {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primarytext);
+}
+
+.form {
+  width: 60%;
+}
+
+.InputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.InputContainer h1 {
+  font-size: 3rem;
+  padding-bottom: 5rem;
+  font-weight: 600;
+}
+
+.Input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  height: 6rem;
+}
+
+.inputBox input {
+  width: 100%;
+  height: 4rem;
+  padding-left: 4rem;
+  font-family: var(--primarytext);
+  font-weight: 400;
+  border-radius: 1rem;
+  border: 1.3px solid #d0d0d0;
+  outline: none;
+}
+/* Icon */
+.IconContainer {
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.IconRight {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.Icon {
+  height: 2rem;
+  width: 2rem;
+  color: #828282;
+  cursor: pointer;
+}
+
+/* Error message */
+
+.ErrorMsg {
+  color: red;
+  font-family: var(--font-inter);
+  position: absolute;
+  bottom: 4px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* button container */
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Aready user question */
+.footerQuestionStyle {
+  color: #828282;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--primarytext);
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .body {
+    width: 100vw;
+  }
+}
+
+/* scroll bar */
+
+.body::-webkit-scrollbar {
+  display: none;
+}

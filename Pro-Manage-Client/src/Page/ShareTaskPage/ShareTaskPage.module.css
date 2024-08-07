@@ -1,0 +1,160 @@
+.header {
+  font-size: 2rem;
+  height: 10dvh;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header span {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+}
+
+.body {
+  height: 90dvh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.taskContainer {
+  width: 40%;
+  height: max-content;
+
+  border-radius: 10px;
+  border: 2px solid #edf5fe;
+  padding: 4rem;
+}
+
+/* Task karts */
+
+.taskHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.KartPriority {
+  font-size: 1rem;
+  font-family: var(--font-poppins);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.KartPriority span {
+  font-weight: 500;
+  color: #707070;
+}
+.KartTitle {
+  font-size: 1.8rem;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.checkListHeader {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.taskChecklist {
+  max-height: 60dvh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.taskChecklist::-webkit-scrollbar {
+  width: 1rem;
+}
+.taskChecklist::-webkit-scrollbar-thumb {
+  background-color: #9cb7c5;
+}
+.CheckListInputBox {
+  width: 98%;
+  padding: 1rem;
+  border: 2px solid #e2e2e2;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: var(--font-inter);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkBox {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.taskKartBottom {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-family: var(--font-poppins);
+  color: #767575;
+}
+.dueDatebtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.dueDatebtn div {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #000000;
+}
+.taskTypebtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.taskbtn {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #eeecec;
+}
+.dueDatebtn span {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: default;
+  background-color: #dbdbdb;
+}
+
+@media only screen and (max-width: 980px) {
+  .taskContainer {
+    font-size: 1px;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .taskContainer {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .taskContainer {
+    width: 90%;
+  }
+  .checkboxtext {
+    font-size: 12px;
+  }
+}
